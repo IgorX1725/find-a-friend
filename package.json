@@ -1,0 +1,26 @@
+{
+  "name": "find-a-friend",
+  "version": "1.0.0",
+  "description": "it is a Rocketseat course challenge",
+  "main": "src/server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/IgorX1725/find-a-friend.git"
+  },
+  "author": "igor cortez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IgorX1725/find-a-friend/issues"
+  },
+  "homepage": "https://github.com/IgorX1725/find-a-friend#readme",
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "fastify": "^5.1.0"
+  },
+  "devDependencies": {
+    "prisma": "^5.22.0"
+  }
+}
