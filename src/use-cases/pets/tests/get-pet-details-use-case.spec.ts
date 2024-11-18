@@ -58,5 +58,8 @@ describe('Get Pet details Use Cases', async () => {
     const findPetExec = sut.execute({ id: nonRegisteredPetId })
 
     await expect(findPetExec).rejects.toBeInstanceOf(PetNotFoundError)
+    await expect(findPetExec).rejects.toThrow(
+      `There no registered pet with id ${nonRegisteredPetId}`,
+    )
   })
 })

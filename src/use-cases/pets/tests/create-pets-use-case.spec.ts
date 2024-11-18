@@ -52,6 +52,7 @@ describe('Create Pets Use Cases', async () => {
   })
 
   it('should not be able to register a pet with a non existent Org id', async () => {
+    const orgId = randomUUID()
     const createPetExec = sut.create({
       name: 'Bilu',
       description: 'Little cute dog',
@@ -61,10 +62,13 @@ describe('Create Pets Use Cases', async () => {
       energy_level: 3,
       environment: 1,
       independency_level: 1,
-      org_id: randomUUID(),
+      org_id: orgId,
       size: 1,
     })
 
     await expect(createPetExec).rejects.toBeInstanceOf(OrgNotFoundError)
+    await expect(createPetExec).rejects.toThrow(
+      `There no register org with id ${orgId}`,
+    )
   })
 })

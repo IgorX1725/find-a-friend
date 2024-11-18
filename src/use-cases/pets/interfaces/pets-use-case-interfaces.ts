@@ -1,6 +1,7 @@
 import { Pet } from '@models/interfaces/PetsRepository'
 
 export interface CreatePetsUseCaseRequest {
+  id?: string
   name: string
   description: string
   category: number
