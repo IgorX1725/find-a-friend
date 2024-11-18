@@ -10,12 +10,17 @@ export class InMemoryPetsRepository implements PetsRepository {
 
   async create(data: CreatePetParams) {
     const pet = {
-      id: randomUUID(),
+      id: data.id ?? randomUUID(),
+      name: data.name,
+      description: data.description,
       category: data.category,
-      breed: data.breed,
       age: data.age,
       color: data.color,
-      orgId: randomUUID(),
+      energy_level: data.energy_level,
+      size: data.size,
+      independency_level: data.independency_level,
+      environment: data.environment,
+      org_id: data.org_id,
       created_at: new Date(),
     }
 

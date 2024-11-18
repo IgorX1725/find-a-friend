@@ -6,21 +6,23 @@ export interface Org {
   password: string
   city: string
   address: string
-  zip_code: number
+  zip_code: string
   addressNumber: number
   contactNumber: string
   created_at: Date
 }
 
 export interface CreateOrgParams {
-  name: string
+  id?: string
+  org_name: string
+  responsible_name: string
   email: string
   password: string
   city: string
   address: string
-  zipCode: number
-  address_number: number
-  contact_number: string
+  zip_code: string
+  addressNumber: number
+  contactNumber: string
 }
 
 export interface FindOrgByEmailAndPasswordParams {
@@ -30,5 +32,6 @@ export interface FindOrgByEmailAndPasswordParams {
 
 export interface OrgsRepository {
   create(data: CreateOrgParams): Promise<Org>
-  findByEmailAndPassword(data: FindOrgByEmailAndPasswordParams): Promise<Org>
+  // findByEmailAndPassword(data: FindOrgByEmailAndPasswordParams): Promise<Org>
+  findById(id: string): Promise<Org | null>
 }

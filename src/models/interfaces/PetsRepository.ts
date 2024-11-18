@@ -2,22 +2,29 @@ export interface Pet {
   id: string
   name: string
   description: string
-  category: 'dog'
-  age: 'cub' | 'adult' | 'elderly'
+  category: number
+  age: number
   color: string
-  energy_level: 'Low' | 'Medium' | 'High'
-  size: 'Small' | 'Medium' | 'Large'
-  independency_level: 'Low' | 'Medium' | 'High'
-  environment: 
+  energy_level: number
+  size: number
+  independency_level: number
+  environment: number
+  created_at: Date
+  org_id: string
 }
 
 export interface CreatePetParams {
-  category: string
-  breed: string
+  id?: string
+  name: string
+  description: string
+  category: number
+  age: number
   color: string
+  energy_level: number
   size: number
-  weight: number
-  orgId: string
+  independency_level: number
+  environment: number
+  org_id: string
 }
 
 export interface ListPetsByFilterParams {
@@ -30,8 +37,8 @@ export interface ListPetsByFilterParams {
 
 export interface PetsRepository {
   create(data: CreatePetParams): Promise<Pet>
-  findManyByFilter(
-    listByCharacteristics: ListPetsByFilterParams,
-  ): Promise<Pet[]>
-  findById(id: string): Promise<Pet>
+  // findManyByFilter(
+  //   listByCharacteristics: ListPetsByFilterParams,
+  // ): Promise<Pet[]>
+  // findById(id: string): Promise<Pet>
 }
