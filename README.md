@@ -2,13 +2,13 @@ it is a [Rockeckseat](https://rocketseat.com.br/) course challenge
 
 # Application Rules
 
-[ ] It must be possible to register a pet
+[x] It must be possible to register a pet
 
 [ ] It must be possible to list all pets available for adoption in a city
 
 [ ] It must be possible to filter pets by their characteristics
 
-[ ] It must be possible to view details of a pet for adoption
+[x] It must be possible to view details of a pet for adoption
 
 [ ] It must be possible to register as an organization (ORG)
 

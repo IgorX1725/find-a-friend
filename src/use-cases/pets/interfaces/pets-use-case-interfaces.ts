@@ -13,6 +13,13 @@ export interface CreatePetsUseCaseRequest {
   org_id: string
 }
 
+export interface GetPetDetailsUseCaseRequest {
+  id: string
+}
 export interface CreatePetsUseCaseResponse {
+  pet: Pet
+}
+
+export interface GetPetDetailsUseCaseResponse {
   pet: Pet
 }

@@ -40,5 +40,5 @@ export interface PetsRepository {
   // findManyByFilter(
   //   listByCharacteristics: ListPetsByFilterParams,
   // ): Promise<Pet[]>
-  // findById(id: string): Promise<Pet>
+  findById(id: string): Promise<Pet | null>
 }
