@@ -10,7 +10,7 @@ it is a [Rockeckseat](https://rocketseat.com.br/) course challenge
 
 [x] It must be possible to view details of a pet for adoption
 
-[ ] It must be possible to register as an organization (ORG)
+[x] It must be possible to register as an organization (ORG)
 
 [ ] It must be possible to log in as an organization (ORG)
 
