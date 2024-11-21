@@ -16,3 +16,12 @@ export interface CreateOrgUseCaseRequest {
 export interface CreateOrgUseCaseResponse {
   org: Org
 }
+
+export interface AuthenticateOrgRequest {
+  email: string
+  password: string
+}
+
+export interface AuthenticateOrgResponse {
+  org: Omit<Org, 'password' | 'created_at'>
+}
