@@ -4,9 +4,9 @@ it is a [Rockeckseat](https://rocketseat.com.br/) course challenge
 
 [x] It must be possible to register a pet
 
-[ ] It must be possible to list all pets available for adoption in a city
+[x] It must be possible to list all pets available for adoption in a city
 
-[ ] It must be possible to filter pets by their characteristics
+[x] It must be possible to filter pets by their characteristics
 
 [x] It must be possible to view details of a pet for adoption
 

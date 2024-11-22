@@ -43,4 +43,5 @@ export interface ListPetsByFilterParams {
 export interface PetsRepository {
   create(data: CreatePetParams): Promise<Pet>
   findById(id: string): Promise<Pet | null>
+  findManyByOrgId(orgId: string): Promise<Pet[]>
 }
