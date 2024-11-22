@@ -28,17 +28,19 @@ export interface CreatePetParams {
 }
 
 export interface ListPetsByFilterParams {
-  city: string
-  category?: string
-  breed?: string
+  name?: string
+  description?: string
+  category?: number
   age?: number
   color?: string
+  energy_level?: number
+  size?: number
+  independency_level?: number
+  environment?: number
+  org_id: string
 }
 
 export interface PetsRepository {
   create(data: CreatePetParams): Promise<Pet>
-  // findManyByFilter(
-  //   listByCharacteristics: ListPetsByFilterParams,
-  // ): Promise<Pet[]>
   findById(id: string): Promise<Pet | null>
 }
