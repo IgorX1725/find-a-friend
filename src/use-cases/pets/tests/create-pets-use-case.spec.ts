@@ -22,9 +22,9 @@ describe('Create Pets Use Cases', async () => {
     orgsRepository.items.push({
       org_name: "Pet's house",
       address: 'Good way street',
-      addressNumber: 389,
+      address_number: '389',
       city: 'good city',
-      contactNumber: '9999999999',
+      contact_number: '9999999999',
       created_at: new Date(),
       email: 'owner@email.com',
       id: orgId,

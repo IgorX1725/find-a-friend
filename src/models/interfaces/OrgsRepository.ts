@@ -7,8 +7,8 @@ export interface Org {
   city: string
   address: string
   zip_code: string
-  addressNumber: number
-  contactNumber: string
+  address_number: string
+  contact_number: string
   created_at: Date
 }
 
@@ -21,8 +21,8 @@ export interface CreateOrgParams {
   city: string
   address: string
   zip_code: string
-  addressNumber: number
-  contactNumber: string
+  address_number: string
+  contact_number: string
 }
 
 export interface OrgsRepository {

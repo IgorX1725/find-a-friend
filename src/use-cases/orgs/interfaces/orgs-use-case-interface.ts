@@ -9,8 +9,8 @@ export interface CreateOrgUseCaseRequest {
   city: string
   address: string
   zip_code: string
-  addressNumber: number
-  contactNumber: string
+  address_number: string
+  contact_number: string
 }
 
 export interface CreateOrgUseCaseResponse {
