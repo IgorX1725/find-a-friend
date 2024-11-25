@@ -5,8 +5,9 @@
   "main": "src/server.ts",
   "scripts": {
     "test": "vitest run --dir src/use-cases",
+    "start:db": "docker compose up -d",
     "test:watch": "vitest --dir src/use-cases",
-    "predev": "docker compose up -d",
+    "predev": "npm run start:db",
     "dev": "tsx watch ./src/server.ts"
   },
   "repository": {
